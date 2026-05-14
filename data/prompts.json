@@ -1,12 +1,34 @@
 {
   "jewelryTypes": [
-    { "id": "necklace", "label": "项链", "icon": "💎" },
-    { "id": "bracelet", "label": "手链", "icon": "📿" },
-    { "id": "earring", "label": "耳环", "icon": "✨" }
+    {
+      "id": "necklace",
+      "label": "项链",
+      "icon": "💎"
+    },
+    {
+      "id": "bracelet",
+      "label": "手链",
+      "icon": "📿"
+    },
+    {
+      "id": "earring",
+      "label": "耳环",
+      "icon": "✨"
+    }
   ],
   "photoModes": [
-    { "id": "model", "label": "模特佩戴", "icon": "👤", "description": "模特穿戴饰品的实拍风格商品图" },
-    { "id": "product", "label": "产品摄影", "icon": "📷", "description": "饰品单独展示的产品摄影图" }
+    {
+      "id": "model",
+      "label": "模特佩戴",
+      "icon": "👤",
+      "description": "模特穿戴饰品的实拍风格商品图"
+    },
+    {
+      "id": "product",
+      "label": "产品摄影",
+      "icon": "📷",
+      "description": "饰品单独展示的产品摄影图"
+    }
   ],
   "basePrompts": {
     "model": {
@@ -53,8 +75,14 @@
     {
       "id": "model_appearance",
       "label": "人物特征",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "ma_1",
@@ -83,7 +111,9 @@
         {
           "id": "ma_5",
           "label": "女性侧脸特写",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "女性侧脸特写",
           "prompt_en": "female side profile close-up"
         },
@@ -104,8 +134,14 @@
     {
       "id": "skin_texture",
       "label": "肤质",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "sk_1",
@@ -142,8 +178,14 @@
     {
       "id": "makeup",
       "label": "妆容",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "mk_1",
@@ -180,8 +222,14 @@
     {
       "id": "hairstyle",
       "label": "发型",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "hr_1",
@@ -204,7 +252,10 @@
         {
           "id": "hr_4",
           "label": "高马尾·露出颈耳",
-          "jewelryTypes": ["earring", "necklace"],
+          "jewelryTypes": [
+            "earring",
+            "necklace"
+          ],
           "prompt_zh": "高马尾造型，完全露出耳朵和颈部线条",
           "prompt_en": "high ponytail hairstyle, fully exposing the ears and neck line"
         },
@@ -225,8 +276,14 @@
     {
       "id": "model_vibe",
       "label": "气质神态",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "mv_1",
@@ -269,8 +326,14 @@
     {
       "id": "clothing",
       "label": "服装",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "cl_1",
@@ -311,14 +374,20 @@
         {
           "id": "cl_7",
           "label": "黑色高领毛衣",
-          "jewelryTypes": ["necklace", "earring"],
+          "jewelryTypes": [
+            "necklace",
+            "earring"
+          ],
           "prompt_zh": "身穿黑色高领毛衣，突出饰品与服装的对比",
           "prompt_en": "wearing a black turtleneck sweater, emphasizing the contrast between jewelry and clothing"
         },
         {
           "id": "cl_8",
           "label": "裸肩/一字肩上衣",
-          "jewelryTypes": ["necklace", "earring"],
+          "jewelryTypes": [
+            "necklace",
+            "earring"
+          ],
           "prompt_zh": "裸肩或一字肩上衣，完全露出颈部和锁骨区域",
           "prompt_en": "off-shoulder or strapless top, fully exposing the neck and collarbone area"
         }
@@ -327,69 +396,95 @@
     {
       "id": "pose_detail",
       "label": "姿态动作",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "pd_1",
           "label": "露出肩膀",
-          "jewelryTypes": ["necklace", "earring"],
+          "jewelryTypes": [
+            "necklace",
+            "earring"
+          ],
           "prompt_zh": "露出肩膀",
           "prompt_en": "shoulders exposed"
         },
         {
           "id": "pd_2",
           "label": "露出锁骨",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "露出锁骨",
           "prompt_en": "collarbone exposed"
         },
         {
           "id": "pd_3",
           "label": "手托下巴·轻触面部",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "一只手托住下巴，手指自然弯曲，轻触面部",
           "prompt_en": "one hand supporting the chin, fingers naturally curved, lightly touching the face"
         },
         {
           "id": "pd_4",
           "label": "侧脸下压·颈部线条拉长",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "头部轻微下压，侧脸向下，颈部线条被拉长",
           "prompt_en": "head slightly pressed down, side profile tilted downward, elongated neck line"
         },
         {
           "id": "pd_5",
           "label": "手轻触项链",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "一只手轻触项链吊坠，指尖自然搭在锁骨处",
           "prompt_en": "one hand lightly touching the necklace pendant, fingertips resting naturally on the collarbone"
         },
         {
           "id": "pd_6",
           "label": "拨弄耳环",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "一只手轻轻拨弄耳环，指尖靠近耳垂，姿态优雅自然",
           "prompt_en": "one hand gently touching the earring, fingertips near the earlobe, elegant and natural pose"
         },
         {
           "id": "pd_7",
           "label": "手自然搭在桌面",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "手自然搭在桌面或膝上，手腕微微抬起展示手链",
           "prompt_en": "hand resting naturally on a table or lap, wrist slightly raised to showcase the bracelet"
         },
         {
           "id": "pd_8",
           "label": "双手交叠·展示手链",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "双手交叠，佩戴手链的手在上方，自然展示手链细节",
           "prompt_en": "hands overlapping, the hand wearing the bracelet on top, naturally showcasing bracelet details"
         },
         {
           "id": "pd_9",
           "label": "抬手撩发",
-          "jewelryTypes": ["bracelet", "earring"],
+          "jewelryTypes": [
+            "bracelet",
+            "earring"
+          ],
           "prompt_zh": "抬手撩发，手腕和耳部同时入镜，动作自然流畅",
           "prompt_en": "raising hand to brush hair, wrist and ear both in frame, movement natural and fluid"
         }
@@ -398,34 +493,48 @@
     {
       "id": "framing",
       "label": "视角构图",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "fr_1",
           "label": "下巴到胸前",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "画面聚焦在人物下巴到胸前的位置",
           "prompt_en": "framing focused from the chin to the chest area"
         },
         {
           "id": "fr_2",
           "label": "下巴到下胸前",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "画面聚焦在人物下巴到下胸前的位置",
           "prompt_en": "framing focused from the chin to the lower chest area"
         },
         {
           "id": "fr_3",
           "label": "锁骨胸前区域",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "画面聚焦在人物锁骨胸前的位置",
           "prompt_en": "framing focused on the collarbone and chest area"
         },
         {
           "id": "fr_4",
           "label": "聚焦锁骨部位",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "画面聚焦锁骨部位",
           "prompt_en": "framing focused on the collarbone area"
         },
@@ -444,52 +553,206 @@
         {
           "id": "fr_7",
           "label": "聚焦耳部侧面",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "画面聚焦耳部侧面，展示耳饰佩戴效果",
           "prompt_en": "framing focused on the side of the ear, showcasing the earring wearing effect"
         },
         {
           "id": "fr_8",
           "label": "侧脸近景",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "侧脸近景，耳饰清晰可见",
           "prompt_en": "close-up side profile, earring clearly visible"
         },
         {
           "id": "fr_9",
           "label": "耳部·脸颊·下颌线集中",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "画面集中在耳部、脸颊与下颌线，眼睛部分被弱化",
           "prompt_en": "framing concentrated on the ear, cheek and jawline, eyes de-emphasized"
         },
         {
           "id": "fr_10",
           "label": "极近景侧脸·对角线构图",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "极近景侧脸构图，耳饰位于画面视觉焦点，面部形成对角线结构，大面积留白被压缩，视觉高度集中",
           "prompt_en": "extreme close-up side profile composition, earring at the visual focal point, face forming a diagonal structure, negative space compressed, highly concentrated visual focus"
         },
         {
           "id": "fr_11",
           "label": "聚焦手腕部位",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "画面聚焦手腕部位，展示手链佩戴效果",
           "prompt_en": "framing focused on the wrist area, showcasing the bracelet wearing effect"
         },
         {
           "id": "fr_12",
           "label": "手部特写",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "手部特写，手链为视觉中心",
           "prompt_en": "close-up of the hand, bracelet as the visual focal point"
         }
       ]
     },
     {
+      "id": "lighting",
+      "label": "光线",
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "lt_1",
+          "label": "强方向性硬光·右上方斜射",
+          "prompt_zh": "强方向性自然光（偏硬光），光源方向右上方斜射，明显光影分割，脸部一侧高光一侧阴影，阴影较深增强情绪，高光区域带暖色偏移，中高对比度",
+          "prompt_en": "strong directional natural light (hard light), light source from upper right, distinct light-shadow split, one side of the face highlighted and one in shadow, deeper shadows enhancing mood, warm color shift in highlight areas, medium-high contrast"
+        },
+        {
+          "id": "lt_2",
+          "label": "自然柔光",
+          "prompt_zh": "自然柔光，光线均匀柔和",
+          "prompt_en": "natural soft light, even and gentle illumination"
+        },
+        {
+          "id": "lt_3",
+          "label": "逆光·轮廓光",
+          "prompt_zh": "逆光拍摄，人物边缘产生柔和轮廓光，发丝泛金光，营造梦幻通透感",
+          "prompt_en": "backlit photography, soft rim light around the subject's edges, golden glow on hair strands, creating a dreamy translucent feel"
+        },
+        {
+          "id": "lt_4",
+          "label": "暖色金色调光线",
+          "prompt_zh": "暖色调金色光线，模拟日落黄金时刻，皮肤和饰品呈现温暖金属光泽",
+          "prompt_en": "warm golden-toned lighting, simulating golden hour sunset, skin and jewelry presenting warm metallic luster"
+        },
+        {
+          "id": "lt_5",
+          "label": "侧面窗光·伦勃朗光",
+          "prompt_zh": "侧面窗光，类似伦勃朗光效，面部一侧明亮一侧出现三角形光斑，层次丰富有戏剧感",
+          "prompt_en": "side window light, Rembrandt-style lighting, one side of the face bright with a triangle highlight on the shadow side, rich depth with dramatic feel"
+        },
+        {
+          "id": "lt_6",
+          "label": "顶光·强调饰品闪点",
+          "prompt_zh": "顶部光源直射，饰品金属和宝石表面产生强烈闪点和反光，突出材质质感",
+          "prompt_en": "overhead light source, creating strong highlights and reflections on jewelry metal and gemstone surfaces, emphasizing material texture"
+        }
+      ]
+    },
+    {
+      "id": "product_desc",
+      "label": "产品描述",
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "prd_1",
+          "label": "小巧精致",
+          "jewelryTypes": [
+            "necklace"
+          ],
+          "prompt_zh": "项链小巧精致",
+          "prompt_en": "the necklace is small and delicate"
+        },
+        {
+          "id": "prd_2",
+          "label": "锁骨链",
+          "jewelryTypes": [
+            "necklace"
+          ],
+          "prompt_zh": "锁骨链",
+          "prompt_en": "collarbone chain necklace"
+        },
+        {
+          "id": "prd_3",
+          "label": "长款项链·胸前垂落",
+          "jewelryTypes": [
+            "necklace"
+          ],
+          "prompt_zh": "长款项链，自然垂落在胸前",
+          "prompt_en": "long necklace, naturally draping down the chest"
+        },
+        {
+          "id": "prd_4",
+          "label": "圆形耳饰",
+          "jewelryTypes": [
+            "earring"
+          ],
+          "prompt_zh": "圆形耳饰，造型简约圆润",
+          "prompt_en": "round earrings, simple and rounded design"
+        },
+        {
+          "id": "prd_5",
+          "label": "长款耳坠",
+          "jewelryTypes": [
+            "earring"
+          ],
+          "prompt_zh": "长款耳坠，随头部动作轻微摇晃",
+          "prompt_en": "long drop earrings, swaying slightly with head movements"
+        },
+        {
+          "id": "prd_6",
+          "label": "耳钉·小巧贴耳",
+          "jewelryTypes": [
+            "earring"
+          ],
+          "prompt_zh": "小巧耳钉，紧贴耳垂，精致不张扬",
+          "prompt_en": "small stud earrings, close to the earlobe, delicate and understated"
+        },
+        {
+          "id": "prd_7",
+          "label": "精致链条手链",
+          "jewelryTypes": [
+            "bracelet"
+          ],
+          "prompt_zh": "精致细链条手链，链节细密有光泽",
+          "prompt_en": "delicate chain bracelet, fine links with a glossy finish"
+        },
+        {
+          "id": "prd_8",
+          "label": "宽版手镯",
+          "jewelryTypes": [
+            "bracelet"
+          ],
+          "prompt_zh": "宽版手镯，造型有分量感，贴合手腕弧度",
+          "prompt_en": "wide bangle bracelet, substantial design, conforming to the curve of the wrist"
+        }
+      ]
+    },
+    {
       "id": "background_scene",
       "label": "背景场景",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "bs_1",
@@ -536,118 +799,16 @@
       ]
     },
     {
-      "id": "lighting",
-      "label": "光线",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "lt_1",
-          "label": "强方向性硬光·右上方斜射",
-          "prompt_zh": "强方向性自然光（偏硬光），光源方向右上方斜射，明显光影分割，脸部一侧高光一侧阴影，阴影较深增强情绪，高光区域带暖色偏移，中高对比度",
-          "prompt_en": "strong directional natural light (hard light), light source from upper right, distinct light-shadow split, one side of the face highlighted and one in shadow, deeper shadows enhancing mood, warm color shift in highlight areas, medium-high contrast"
-        },
-        {
-          "id": "lt_2",
-          "label": "自然柔光",
-          "prompt_zh": "自然柔光，光线均匀柔和",
-          "prompt_en": "natural soft light, even and gentle illumination"
-        },
-        {
-          "id": "lt_3",
-          "label": "逆光·轮廓光",
-          "prompt_zh": "逆光拍摄，人物边缘产生柔和轮廓光，发丝泛金光，营造梦幻通透感",
-          "prompt_en": "backlit photography, soft rim light around the subject's edges, golden glow on hair strands, creating a dreamy translucent feel"
-        },
-        {
-          "id": "lt_4",
-          "label": "暖色金色调光线",
-          "prompt_zh": "暖色调金色光线，模拟日落黄金时刻，皮肤和饰品呈现温暖金属光泽",
-          "prompt_en": "warm golden-toned lighting, simulating golden hour sunset, skin and jewelry presenting warm metallic luster"
-        },
-        {
-          "id": "lt_5",
-          "label": "侧面窗光·伦勃朗光",
-          "prompt_zh": "侧面窗光，类似伦勃朗光效，面部一侧明亮一侧出现三角形光斑，层次丰富有戏剧感",
-          "prompt_en": "side window light, Rembrandt-style lighting, one side of the face bright with a triangle highlight on the shadow side, rich depth with dramatic feel"
-        },
-        {
-          "id": "lt_6",
-          "label": "顶光·强调饰品闪点",
-          "prompt_zh": "顶部光源直射，饰品金属和宝石表面产生强烈闪点和反光，突出材质质感",
-          "prompt_en": "overhead light source, creating strong highlights and reflections on jewelry metal and gemstone surfaces, emphasizing material texture"
-        }
-      ]
-    },
-    {
-      "id": "product_desc",
-      "label": "产品描述",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "prd_1",
-          "label": "小巧精致",
-          "jewelryTypes": ["necklace"],
-          "prompt_zh": "项链小巧精致",
-          "prompt_en": "the necklace is small and delicate"
-        },
-        {
-          "id": "prd_2",
-          "label": "锁骨链",
-          "jewelryTypes": ["necklace"],
-          "prompt_zh": "锁骨链",
-          "prompt_en": "collarbone chain necklace"
-        },
-        {
-          "id": "prd_3",
-          "label": "长款项链·胸前垂落",
-          "jewelryTypes": ["necklace"],
-          "prompt_zh": "长款项链，自然垂落在胸前",
-          "prompt_en": "long necklace, naturally draping down the chest"
-        },
-        {
-          "id": "prd_4",
-          "label": "圆形耳饰",
-          "jewelryTypes": ["earring"],
-          "prompt_zh": "圆形耳饰，造型简约圆润",
-          "prompt_en": "round earrings, simple and rounded design"
-        },
-        {
-          "id": "prd_5",
-          "label": "长款耳坠",
-          "jewelryTypes": ["earring"],
-          "prompt_zh": "长款耳坠，随头部动作轻微摇晃",
-          "prompt_en": "long drop earrings, swaying slightly with head movements"
-        },
-        {
-          "id": "prd_6",
-          "label": "耳钉·小巧贴耳",
-          "jewelryTypes": ["earring"],
-          "prompt_zh": "小巧耳钉，紧贴耳垂，精致不张扬",
-          "prompt_en": "small stud earrings, close to the earlobe, delicate and understated"
-        },
-        {
-          "id": "prd_7",
-          "label": "精致链条手链",
-          "jewelryTypes": ["bracelet"],
-          "prompt_zh": "精致细链条手链，链节细密有光泽",
-          "prompt_en": "delicate chain bracelet, fine links with a glossy finish"
-        },
-        {
-          "id": "prd_8",
-          "label": "宽版手镯",
-          "jewelryTypes": ["bracelet"],
-          "prompt_zh": "宽版手镯，造型有分量感，贴合手腕弧度",
-          "prompt_en": "wide bangle bracelet, substantial design, conforming to the curve of the wrist"
-        }
-      ]
-    },
-    {
       "id": "mood",
       "label": "氛围风格",
-      "photoModes": ["model"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "mo_1",
@@ -684,37 +845,200 @@
     {
       "id": "jewelry_fidelity",
       "label": "饰品保真约束",
-      "photoModes": ["model", "product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "photoModes": [
+        "model",
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "jf_necklace",
           "label": "项链保真约束",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "严格保持饰品的原始结构、比例和尺寸，不得改变形状、厚度、长度或细节，不得重新设计、不得美化、不得夸张放大或缩小，保持与参考图完全一致的几何结构和真实比例，生成模特佩戴该饰品的真实商业摄影效果，饰品尺寸符合真实佩戴比例，符合人体自然尺寸关系",
           "prompt_en": "strictly maintain the original structure, proportions and dimensions of the necklace, do not alter shape, thickness, length or details, no redesign, no embellishment, no exaggerated enlargement or reduction, maintain geometric structure and realistic proportions fully consistent with the reference image, generate realistic commercial photography of the model wearing this necklace, necklace size matches realistic wearing proportions and natural human body scale"
         },
         {
           "id": "jf_earring",
           "label": "耳饰保真约束",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "使用参考图中的原始耳饰设计，严格保持耳环的原始比例、长度和厚度，不得改变形状，不得缩小或放大，不得优化设计，保持与参考图完全一致的几何结构和真实尺寸，耳环自然佩戴在耳垂位置，尺寸与耳朵比例真实自然，符合真实生活中的佩戴大小",
           "prompt_en": "use the original earring design from the reference image, strictly maintain the original proportions, length and thickness of the earrings, do not alter shape, do not shrink or enlarge, do not optimize design, maintain geometric structure and realistic dimensions fully consistent with the reference image, earrings naturally worn on the earlobe, size proportional to the ear in a realistic and natural way, matching real-life wearing dimensions"
         },
         {
           "id": "jf_bracelet",
           "label": "手链保真约束",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "使用参考图中的原始设计，严格保持手链的圈口厚度、宽度和结构比例，不得改变厚薄，不得重新设计，保持与参考图完全一致的尺寸和工艺细节，手链自然佩戴在手上，尺寸符合真实手部比例，饰品靠近镜头产生微弱闪点，突出金属质感",
           "prompt_en": "use the original design from the reference image, strictly maintain the bracelet's band thickness, width and structural proportions, do not alter thickness, do not redesign, maintain dimensions and craftsmanship details fully consistent with the reference image, bracelet naturally worn on the hand, size matches realistic hand proportions, jewelry close to the lens producing subtle light spots, highlighting metallic texture"
         }
       ]
     },
     {
-      "id": "product_background",
-      "label": "背景",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
+      "id": "product_style",
+      "label": "摄影风格",
+      "photoModes": [
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "ps_1",
+          "label": "摄影棚风格",
+          "prompt_zh": "摄影棚风格",
+          "prompt_en": "studio photography style"
+        },
+        {
+          "id": "ps_2",
+          "label": "微距特写",
+          "prompt_zh": "微距特写摄影，展示饰品工艺细节和材质纹理",
+          "prompt_en": "macro close-up photography, showcasing jewelry craftsmanship details and material textures"
+        },
+        {
+          "id": "ps_3",
+          "label": "商业广告级",
+          "prompt_zh": "商业广告级产品摄影，高清锐利，色彩准确，专业布光",
+          "prompt_en": "commercial advertising-grade product photography, high-definition sharp, accurate colors, professional lighting"
+        }
+      ]
+    },
+    {
+      "id": "product_shot",
+      "label": "拍摄方式",
+      "photoModes": [
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "psh_1",
+          "label": "完整俯拍图",
+          "prompt_zh": "完整俯拍图，展示完整产品链条完整",
+          "prompt_en": "complete top-down shot, showcasing the full product chain completely"
+        },
+        {
+          "id": "psh_2",
+          "label": "俯拍·链条形成正圆形",
+          "jewelryTypes": [
+            "necklace",
+            "bracelet"
+          ],
+          "prompt_zh": "完整俯拍图，展示完整产品链条完整形成正圆形",
+          "prompt_en": "complete top-down shot, showcasing the full product chain forming a perfect circle"
+        },
+        {
+          "id": "psh_3",
+          "label": "45度角斜拍",
+          "prompt_zh": "45度角斜拍，展示产品立体感和厚度",
+          "prompt_en": "45-degree angled shot, showcasing the product's three-dimensionality and thickness"
+        },
+        {
+          "id": "psh_4",
+          "label": "正面平拍",
+          "prompt_zh": "正面平拍，产品平放或悬挂展示，完整呈现正面细节",
+          "prompt_en": "straight-on flat shot, product laid flat or hung for display, fully presenting front details"
+        },
+        {
+          "id": "psh_5",
+          "label": "局部细节特写",
+          "prompt_zh": "局部细节特写，聚焦产品扣头、吊坠或工艺细节部分",
+          "prompt_en": "partial detail close-up, focusing on the clasp, pendant, or craftsmanship detail sections"
+        }
+      ]
+    },
+    {
+      "id": "product_lighting",
+      "label": "布光",
+      "photoModes": [
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "pl_1",
+          "label": "柔光箱均匀布光",
+          "prompt_zh": "柔光箱均匀布光，消除硬阴影，产品表面光线柔和均匀",
+          "prompt_en": "softbox even lighting, eliminating hard shadows, soft and even light on product surface"
+        },
+        {
+          "id": "pl_2",
+          "label": "侧光·突出质感纹理",
+          "prompt_zh": "侧面打光，强调饰品表面的质感、纹理和工艺细节",
+          "prompt_en": "side lighting, emphasizing the texture, surface patterns and craftsmanship details of the jewelry"
+        },
+        {
+          "id": "pl_3",
+          "label": "点光源·强闪点",
+          "prompt_zh": "点光源照射，在金属和宝石表面形成明亮闪点和高光反射",
+          "prompt_en": "point light source, creating bright sparkle points and highlight reflections on metal and gemstone surfaces"
+        }
+      ]
+    },
+    {
+      "id": "product_extra",
+      "label": "特殊要求",
+      "photoModes": [
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
+      "options": [
+        {
+          "id": "pe_1",
+          "label": "去掉商标卡片",
+          "prompt_zh": "去掉产品商标卡片",
+          "prompt_en": "remove product brand tags and cards"
+        },
+        {
+          "id": "pe_2",
+          "label": "无投影·干净白底",
+          "prompt_zh": "产品无投影或仅有极淡投影，保持画面干净适合电商白底图",
+          "prompt_en": "product with no shadow or only very faint shadow, keeping the image clean for e-commerce white background use"
+        },
+        {
+          "id": "pe_3",
+          "label": "带自然投影·增加立体感",
+          "prompt_zh": "产品带有自然柔和投影，增加立体感和真实感",
+          "prompt_en": "product with natural soft shadow, adding dimension and realism"
+        }
+      ]
+    },
+    {
+      "id": "scene_setup_product",
+      "label": "场景布置",
+      "photoModes": [
+        "product"
+      ],
+      "jewelryTypes": [
+        "necklace",
+        "bracelet",
+        "earring"
+      ],
       "options": [
         {
           "id": "pb_1",
@@ -745,271 +1069,186 @@
           "label": "丝绒布面",
           "prompt_zh": "深色丝绒布面作为背景，面料柔软有光泽，衬托饰品质感",
           "prompt_en": "dark velvet fabric as background, soft and lustrous material, complementing the jewelry texture"
-        }
-      ]
-    },
-    {
-      "id": "product_style",
-      "label": "摄影风格",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "ps_1",
-          "label": "摄影棚风格",
-          "prompt_zh": "摄影棚风格",
-          "prompt_en": "studio photography style"
         },
-        {
-          "id": "ps_2",
-          "label": "微距特写",
-          "prompt_zh": "微距特写摄影，展示饰品工艺细节和材质纹理",
-          "prompt_en": "macro close-up photography, showcasing jewelry craftsmanship details and material textures"
-        },
-        {
-          "id": "ps_3",
-          "label": "商业广告级",
-          "prompt_zh": "商业广告级产品摄影，高清锐利，色彩准确，专业布光",
-          "prompt_en": "commercial advertising-grade product photography, high-definition sharp, accurate colors, professional lighting"
-        }
-      ]
-    },
-    {
-      "id": "product_shot",
-      "label": "拍摄方式",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "psh_1",
-          "label": "完整俯拍图",
-          "prompt_zh": "完整俯拍图，展示完整产品链条完整",
-          "prompt_en": "complete top-down shot, showcasing the full product chain completely"
-        },
-        {
-          "id": "psh_2",
-          "label": "俯拍·链条形成正圆形",
-          "jewelryTypes": ["necklace", "bracelet"],
-          "prompt_zh": "完整俯拍图，展示完整产品链条完整形成正圆形",
-          "prompt_en": "complete top-down shot, showcasing the full product chain forming a perfect circle"
-        },
-        {
-          "id": "psh_3",
-          "label": "45度角斜拍",
-          "prompt_zh": "45度角斜拍，展示产品立体感和厚度",
-          "prompt_en": "45-degree angled shot, showcasing the product's three-dimensionality and thickness"
-        },
-        {
-          "id": "psh_4",
-          "label": "正面平拍",
-          "prompt_zh": "正面平拍，产品平放或悬挂展示，完整呈现正面细节",
-          "prompt_en": "straight-on flat shot, product laid flat or hung for display, fully presenting front details"
-        },
-        {
-          "id": "psh_5",
-          "label": "局部细节特写",
-          "prompt_zh": "局部细节特写，聚焦产品扣头、吊坠或工艺细节部分",
-          "prompt_en": "partial detail close-up, focusing on the clasp, pendant, or craftsmanship detail sections"
-        }
-      ]
-    },
-    {
-      "id": "product_lighting",
-      "label": "布光",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "pl_1",
-          "label": "柔光箱均匀布光",
-          "prompt_zh": "柔光箱均匀布光，消除硬阴影，产品表面光线柔和均匀",
-          "prompt_en": "softbox even lighting, eliminating hard shadows, soft and even light on product surface"
-        },
-        {
-          "id": "pl_2",
-          "label": "侧光·突出质感纹理",
-          "prompt_zh": "侧面打光，强调饰品表面的质感、纹理和工艺细节",
-          "prompt_en": "side lighting, emphasizing the texture, surface patterns and craftsmanship details of the jewelry"
-        },
-        {
-          "id": "pl_3",
-          "label": "点光源·强闪点",
-          "prompt_zh": "点光源照射，在金属和宝石表面形成明亮闪点和高光反射",
-          "prompt_en": "point light source, creating bright sparkle points and highlight reflections on metal and gemstone surfaces"
-        }
-      ]
-    },
-    {
-      "id": "product_scene",
-      "label": "场景布置",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
         {
           "id": "psc_e1",
           "label": "镂空亚麻布+英文书墨镜",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保持耳饰不变，背景换成ins风质感，耳饰放在镂空亚麻布上，室外柔和的自然光，背景干净，桌面有英文书、墨镜",
           "prompt_en": "keep the earrings unchanged, Instagram aesthetic style background, earrings placed on openwork linen fabric, soft outdoor natural light, clean background, English book and sunglasses on the table"
         },
         {
           "id": "psc_e2",
           "label": "银色金属镜面+专业灯光",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保持耳饰不变，背景换成ins风质感，耳饰放在银色金属镜子上，室内专业产品拍摄灯光，背景干净",
           "prompt_en": "keep the earrings unchanged, Instagram aesthetic style background, earrings placed on a silver metal mirror, indoor professional product photography lighting, clean background"
         },
         {
           "id": "psc_e3",
           "label": "白色瓷盘+英文杂志",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保留耳饰主体不变，把耳饰放在白色瓷盘内，盘子下是本英文杂志，通透光影，ins风，高级氛围感",
           "prompt_en": "keep the earrings unchanged, earrings placed inside a white porcelain dish, an English magazine underneath the dish, translucent light and shadow, Instagram aesthetic, premium atmosphere"
         },
         {
           "id": "psc_e4",
           "label": "奶白色绸缎+贝壳碎石",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保持耳饰不变，ins风质感，耳饰放在奶白色真丝绸缎上，旁边散落几颗天然贝壳和细碎白色小石子，柔和自然光从侧面射入，浅景深虚化背景，高级珠宝品牌广告质感",
           "prompt_en": "keep the earrings unchanged, Instagram aesthetic, earrings placed on creamy white silk satin, a few natural shells and fine white pebbles scattered nearby, soft natural light from the side, shallow depth of field with blurred background, luxury jewelry brand advertising quality"
         },
         {
           "id": "psc_e5",
           "label": "石膏雕塑托盘+光影",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保持耳饰不变，ins风质感，耳饰放在白色石膏雕塑感小托盘上，桌面有光影斑驳的树叶投影，背景干净带暖调，文艺复古的高级感",
           "prompt_en": "keep the earrings unchanged, Instagram aesthetic, earrings placed on a white plaster sculptural small tray, dappled leaf shadow patterns on the table surface, clean background with warm tones, artistic vintage luxury feel"
         },
         {
           "id": "psc_e6",
           "label": "透明亚克力架+杂志内页",
-          "jewelryTypes": ["earring"],
+          "jewelryTypes": [
+            "earring"
+          ],
           "prompt_zh": "保持耳饰不变，ins风质感，耳饰挂在透明亚克力T型展示架上，底部铺着摊开的时尚杂志内页，室内柔和灯光，干净利落，Celine风极简高级感",
           "prompt_en": "keep the earrings unchanged, Instagram aesthetic, earrings hanging on a transparent acrylic T-bar display stand, an open fashion magazine spread underneath, soft indoor lighting, clean and sharp, Celine-inspired minimalist luxury feel"
         },
         {
           "id": "psc_n1",
           "label": "镂空亚麻布+英文书墨镜",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，背景换成ins风质感，项链自然盘放在镂空亚麻布上，室外柔和的自然光，背景干净，桌面有英文书、墨镜",
           "prompt_en": "keep the necklace unchanged, Instagram aesthetic style background, necklace naturally coiled on openwork linen fabric, soft outdoor natural light, clean background, English book and sunglasses on the table"
         },
         {
           "id": "psc_n2",
           "label": "银色金属镜面+专业灯光",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，背景换成ins风质感，项链自然垂放在银色金属镜子上，室内专业产品拍摄灯光，背景干净",
           "prompt_en": "keep the necklace unchanged, Instagram aesthetic style background, necklace naturally draped on a silver metal mirror, indoor professional product photography lighting, clean background"
         },
         {
           "id": "psc_n3",
           "label": "白色瓷盘+英文杂志",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保留项链主体不变，把项链盘放在白色瓷盘内，盘子下是本英文杂志，通透光影，ins风，高级氛围感",
           "prompt_en": "keep the necklace unchanged, necklace coiled inside a white porcelain dish, an English magazine underneath the dish, translucent light and shadow, Instagram aesthetic, premium atmosphere"
         },
         {
           "id": "psc_n4",
           "label": "亚麻布面+干花点缀",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，项链自然弯曲铺展在米色亚麻布面上，旁边点缀几枝干花，ins风，自然光通透，高级生活方式感",
           "prompt_en": "keep the necklace unchanged, necklace naturally curved and spread on beige linen fabric, accented with a few dried flowers nearby, Instagram aesthetic, translucent natural light, premium lifestyle feel"
         },
         {
           "id": "psc_n5",
           "label": "奶白色绸缎+自然光",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，ins风质感，项链自然蜿蜒铺在奶白色真丝绸缎上，绸缎有柔和的褶皱光泽，侧面自然光，浅景深，背景干净，Tiffany广告般的高级珠宝质感",
           "prompt_en": "keep the necklace unchanged, Instagram aesthetic, necklace naturally winding on creamy white silk satin, satin with soft wrinkle sheen, side natural light, shallow depth of field, clean background, Tiffany advertisement-like luxury jewelry quality"
         },
         {
           "id": "psc_n6",
           "label": "石膏雕塑托盘+光影",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，ins风质感，项链盘在白色石膏雕塑感圆盘上，桌面有光影斑驳的树叶投影，背景干净带暖调，文艺复古的高级感",
           "prompt_en": "keep the necklace unchanged, Instagram aesthetic, necklace coiled on a white plaster sculptural round plate, dappled leaf shadow patterns on the table surface, clean background with warm tones, artistic vintage luxury feel"
         },
         {
           "id": "psc_n7",
           "label": "米色皮革面+香水瓶",
-          "jewelryTypes": ["necklace"],
+          "jewelryTypes": [
+            "necklace"
+          ],
           "prompt_zh": "保持项链不变，ins风质感，项链自然搭在米色皮革垫面上，旁边放一瓶简约设计的香水，背景干净柔和，室内柔光，Chanel风法式优雅高级感",
           "prompt_en": "keep the necklace unchanged, Instagram aesthetic, necklace naturally draped on a beige leather pad, a minimally designed perfume bottle placed nearby, clean and soft background, indoor soft light, Chanel-inspired French elegance luxury feel"
         },
         {
           "id": "psc_b1",
           "label": "镂空亚麻布+英文书墨镜",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，背景换成ins风质感，手链自然环绕放在镂空亚麻布上，室外柔和的自然光，背景干净，桌面有英文书、墨镜",
           "prompt_en": "keep the bracelet unchanged, Instagram aesthetic style background, bracelet naturally looped on openwork linen fabric, soft outdoor natural light, clean background, English book and sunglasses on the table"
         },
         {
           "id": "psc_b2",
           "label": "银色金属镜面+专业灯光",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，背景换成ins风质感，手链放在银色金属镜子上，室内专业产品拍摄灯光，背景干净",
           "prompt_en": "keep the bracelet unchanged, Instagram aesthetic style background, bracelet placed on a silver metal mirror, indoor professional product photography lighting, clean background"
         },
         {
           "id": "psc_b3",
           "label": "白色瓷盘+英文杂志",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保留手链主体不变，把手链放在白色瓷盘内，盘子下是本英文杂志，通透光影，ins风，高级氛围感",
           "prompt_en": "keep the bracelet unchanged, bracelet placed inside a white porcelain dish, an English magazine underneath the dish, translucent light and shadow, Instagram aesthetic, premium atmosphere"
         },
         {
           "id": "psc_b4",
           "label": "手腕形展示架+大理石底",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，手链套在圆柱形展示架上，底部是白色大理石台面，ins风，背景干净简洁，自然柔光",
           "prompt_en": "keep the bracelet unchanged, bracelet placed on a cylindrical display stand, white marble surface at the base, Instagram aesthetic, clean and minimal background, soft natural light"
         },
         {
           "id": "psc_b5",
           "label": "奶白色绸缎+贝壳",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，ins风质感，手链自然环成圈放在奶白色真丝绸缎上，旁边散落几颗天然贝壳，柔和自然光从侧面射入，浅景深，高级珠宝品牌广告质感",
           "prompt_en": "keep the bracelet unchanged, Instagram aesthetic, bracelet naturally looped on creamy white silk satin, a few natural shells scattered nearby, soft natural light from the side, shallow depth of field, luxury jewelry brand advertising quality"
         },
         {
           "id": "psc_b6",
           "label": "石膏雕塑手模+光影",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，ins风质感，手链套在白色石膏手部雕塑上，桌面有光影斑驳的树叶投影，背景干净带暖调，Cartier风文艺高级感",
           "prompt_en": "keep the bracelet unchanged, Instagram aesthetic, bracelet placed on a white plaster hand sculpture, dappled leaf shadow patterns on the table surface, clean background with warm tones, Cartier-inspired artistic luxury feel"
         },
         {
           "id": "psc_b7",
           "label": "木质首饰盒+咖啡杯",
-          "jewelryTypes": ["bracelet"],
+          "jewelryTypes": [
+            "bracelet"
+          ],
           "prompt_zh": "保持手链不变，ins风质感，手链搭在打开的木质首饰盒边缘，旁边有一杯拿铁咖啡，桌面是白色大理石，室内窗光柔和通透，ins生活方式博主风格，精致日常高级感",
           "prompt_en": "keep the bracelet unchanged, Instagram aesthetic, bracelet draped over the edge of an open wooden jewelry box, a latte coffee cup nearby, white marble table surface, soft and translucent indoor window light, Instagram lifestyle blogger style, refined everyday luxury feel"
-        }
-      ]
-    },
-    {
-      "id": "product_extra",
-      "label": "特殊要求",
-      "photoModes": ["product"],
-      "jewelryTypes": ["necklace", "bracelet", "earring"],
-      "options": [
-        {
-          "id": "pe_1",
-          "label": "去掉商标卡片",
-          "prompt_zh": "去掉产品商标卡片",
-          "prompt_en": "remove product brand tags and cards"
-        },
-        {
-          "id": "pe_2",
-          "label": "无投影·干净白底",
-          "prompt_zh": "产品无投影或仅有极淡投影，保持画面干净适合电商白底图",
-          "prompt_en": "product with no shadow or only very faint shadow, keeping the image clean for e-commerce white background use"
-        },
-        {
-          "id": "pe_3",
-          "label": "带自然投影·增加立体感",
-          "prompt_zh": "产品带有自然柔和投影，增加立体感和真实感",
-          "prompt_en": "product with natural soft shadow, adding dimension and realism"
         }
       ]
     }
