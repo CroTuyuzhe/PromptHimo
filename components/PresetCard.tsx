@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { getPresetImageUrl } from "@/lib/electronAPI";
+
 interface PresetLike {
   id: string;
   name: string;
   description?: string;
   prompt_zh: string;
   prompt_en: string;
+  referenceImage?: string;
 }
 
 interface Props {
@@ -59,9 +62,9 @@ export default function PresetCard({ preset, photoModeLabel, onDelete }: Props) 
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-5 space-y-3">
+    <div className="rounded-xl border border-gray-200 bg-white px-4 py-3 space-y-2">
       <div className="flex items-start justify-between gap-3">
-        <div>
+        <div className="flex-1 min-w-0">
           <h3 className="text-base font-bold text-gray-900">{preset.name}</h3>
           {(photoModeLabel || preset.description) && (
             <p className="text-xs text-gray-500 mt-0.5">
@@ -71,21 +74,36 @@ export default function PresetCard({ preset, photoModeLabel, onDelete }: Props) 
             </p>
           )}
         </div>
-        <div className="flex items-center gap-2 shrink-0 mt-0.5">
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="text-xs text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
-          >
-            {expanded ? "收起" : "展开详情"}
-          </button>
-          {onDelete && (
+        <div className="flex items-center gap-3 shrink-0 mt-0.5">
+          {preset.referenceImage && (() => {
+            const src = getPresetImageUrl(preset.referenceImage);
+            return src ? (
+              <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                <img
+                  src={src}
+                  alt="参考图"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { (e.target as HTMLImageElement).parentElement!.style.display = "none"; }}
+                />
+              </div>
+            ) : null;
+          })()}
+          <div className="flex flex-col items-end gap-1">
             <button
-              onClick={onDelete}
-              className="text-xs text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
+              onClick={() => setExpanded(!expanded)}
+              className="text-xs text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
             >
-              删除
+              {expanded ? "收起" : "展开详情"}
             </button>
-          )}
+            {onDelete && (
+              <button
+                onClick={onDelete}
+                className="text-xs text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
+              >
+                删除
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

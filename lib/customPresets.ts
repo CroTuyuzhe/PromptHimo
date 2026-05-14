@@ -26,6 +26,11 @@ export function saveCustomPreset(preset: CustomPreset) {
   writeAll(all);
 }
 
-export function deleteCustomPreset(id: string) {
-  writeAll(readAll().filter((p) => p.id !== id));
+export async function deleteCustomPreset(id: string) {
+  const all = readAll();
+  const target = all.find((p) => p.id === id);
+  if (target?.referenceImage && window.electronAPI) {
+    await window.electronAPI.deleteImage(target.referenceImage);
+  }
+  writeAll(all.filter((p) => p.id !== id));
 }

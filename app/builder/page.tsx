@@ -7,6 +7,7 @@ import { getPromptData } from "@/lib/dataStore";
 import { isUnlocked } from "@/lib/auth";
 import { navigateTo } from "@/lib/navigate";
 import { getCustomPresets, saveCustomPreset, deleteCustomPreset } from "@/lib/customPresets";
+import { getElectronAPI } from "@/lib/electronAPI";
 import LockScreen from "@/components/LockScreen";
 import PhotoModeSelector from "@/components/PhotoModeSelector";
 import CategorySection from "@/components/CategorySection";
@@ -40,13 +41,28 @@ export default function BuilderPage() {
   );
 
   const handleAddPreset = useCallback(
-    (form: { name: string; prompt_zh: string; prompt_en: string }) => {
+    async (form: { name: string; prompt_zh: string; prompt_en: string; imageFile?: File }) => {
+      const id = `custom_${Date.now()}`;
+      let referenceImage: string | undefined;
+
+      if (form.imageFile) {
+        const api = getElectronAPI();
+        if (api) {
+          const ext = form.imageFile.name.split(".").pop() || "jpg";
+          const filename = `${id}.${ext}`;
+          const buffer = await form.imageFile.arrayBuffer();
+          await api.saveImage(buffer, filename);
+          referenceImage = filename;
+        }
+      }
+
       const preset: CustomPreset = {
-        id: `custom_${Date.now()}`,
+        id,
         name: form.name,
         jewelryType,
         prompt_zh: form.prompt_zh,
         prompt_en: form.prompt_en,
+        referenceImage,
       };
       saveCustomPreset(preset);
       setCustomVer((v) => v + 1);
@@ -54,8 +70,8 @@ export default function BuilderPage() {
     [jewelryType]
   );
 
-  const handleDeletePreset = useCallback((id: string) => {
-    deleteCustomPreset(id);
+  const handleDeletePreset = useCallback(async (id: string) => {
+    await deleteCustomPreset(id);
     setCustomVer((v) => v + 1);
   }, []);
 

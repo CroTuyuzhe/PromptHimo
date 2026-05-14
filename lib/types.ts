@@ -56,6 +56,7 @@ export interface CustomPreset {
   jewelryType: string;
   prompt_zh: string;
   prompt_en: string;
+  referenceImage?: string;
 }
 
 export type Selections = Record<string, string[]>;
